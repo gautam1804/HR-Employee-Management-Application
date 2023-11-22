@@ -19,23 +19,24 @@ This application was designed in 3 layers (CONCEPT OF LAYERED PROGRAMMING) <br>
 ## Environment Specifications
 ```bash
 C:\>java -version
-java version "20.0.2" 2023-07-18
-Java(TM) SE Runtime Environment (build 20.0.2+9-78)
-Java HotSpot(TM) 64-Bit Server VM (build 20.0.2+9-78, mixed mode, sharing)
+java version "10.0.1" 2018-04-17
+Java(TM) SE Runtime Environment 18.3 (build 10.0.1+10)
+Java HotSpot(TM) 64-Bit Server VM 18.3 (build 10.0.1+10, mixed mode)
 
 C:\>gradle -version
 
 ------------------------------------------------------------
-Gradle 8.2.1
+Gradle 6.5
 ------------------------------------------------------------
 
-Build time:   2023-07-10 12:12:35 UTC
+Build time:   2020-06-02 20:46:21 UTC
+Revision:     a27f41e4ae5e8a41ab9b19f8dd6d86d7b384dad4
 
-Kotlin:       1.8.20
-Groovy:       3.0.17
-Ant:          Apache Ant(TM) version 1.10.13 compiled on January 4 2023
-JVM:          20.0.2 (Oracle Corporation 20.0.2+9-78)
-OS:           Windows 11 10.0 amd64
+Kotlin:       1.3.72
+Groovy:       2.5.11
+Ant:          Apache Ant(TM) version 1.10.7 compiled on September 1 2019
+JVM:          10.0.1 ("Oracle Corporation" 10.0.1+10)
+OS:           Windows 10 10.0 amd64
 
 ```
 
