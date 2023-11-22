@@ -52,11 +52,11 @@ OS:           Windows 11 10.0 amd64
 This folder includes files that will be shared between all the layers like **enums** <br>
 To compile GENDER.java <br>
 ```bash
-HR\common\src> javac -d ..\classes -classpath;. com\employee\management\enums\*.java
+hr\common\src> javac -d ..\classes -classpath;. com\thinking\machines\enums\*.java
 ```
 To create a jar file of **common** folder: <br>
 ```bash
-HR\common\classes> jar -cvf ..\dist\hr-common.jar com
+hr\common\classes> jar -cvf ..\dist\hr-common.jar com
 ```
 The above line will create a **hr-common.jar** file.
 
@@ -64,41 +64,41 @@ The above line will create a **hr-common.jar** file.
 ## DL: Data Layer
 To compile the following files: DAOException.java <br>
 ```bash
-HR\DL\src> javac -d ..\classes -classpath ..\..\common\dist\hr-common.jar;. com\employee\management\hr\dl\exceptions\*.java
+hr\dl\src> javac -d ..\classes -classpath ..\..\common\dist\hr-common.jar;. com\thinking\machines\hr\dl\exceptions\*.java
 ```
 To compile the following files: DesignationDTOInterface.java, EmployeeDTOInterface.java <br>
 ```bash
-HR\DL\src> javac -d ..\classes -classpath ..\..\common\dist\hr-common.jar;. com\employee\management\hr\dl\interfaces\dto\*.java
+hr\dl\src> javac -d ..\classes -classpath ..\..\common\dist\hr-common.jar;. com\thinking\machines\hr\dl\interfaces\dto\*.java
 ```
 To compile the following files: DesignationDAOInterface.java, EmployeeDAOInterface.java <br>
 ```bash
-HR\DL\src> javac -d ..\classes -classpath ..\..\common\dist\hr-common.jar;. com\employee\management\hr\dl\interfaces\dto\*.java
+HR\dl\src> javac -d ..\classes -classpath ..\..\common\dist\hr-common.jar;. com\thinking\machines\hr\dl\interfaces\dto\*.java
 ```
 To compile the following files: DesignationDTO.java, EmployeeDTO.java <br>
 ```bash
-HR\DL\src> javac -d ..\classes -classpath ..\..\common\dist\hr-common.jar;. com\employee\management\hr\dl\dto\*.java
+hr\dl\src> javac -d ..\classes -classpath ..\..\common\dist\hr-common.jar;. com\thinking\machines\hr\dl\dto\*.java
 ```
 To compile the following files: DesignationDAO.java, EmployeeDAO.java <br>
 ```bash
-HR\DL\src> javac -d ..\classes -classpath ..\..\common\dist\hr-common.jar;. com\employee\management\hr\dl\dao\*.java
+HR\dl\src> javac -d ..\classes -classpath ..\..\common\dist\hr-common.jar;. com\thinking\machines\hr\dl\dao\*.java
 ```
 To compile **Testcases** <br>
 ```bash
-HR\DL\testcases> javac -classpath ..\..\common\dist\hr-common.jar;..\classes;. *.java
+hr\dl\testcases> javac -classpath ..\..\common\dist\hr-common.jar;..\classes;. *.java
 ```
 
 ## Business Layer
 To compile files:
 ```bash
-HR\BL>gradle build
+hr\bl>gradle build
 ```
 
 ## Presentation Layer
 To compile files:
 ```bash
-HR\PL>gradle build
+hr\pl>gradle build
 ```
 **To Run the application:**
 ```bash
-HR\PL>java -classpath ..\common\dist\hr-common.jar;..\DL\dist\hr-dl-1.0.jar;..\BL\build\libs\BL.jar;build\libs\PL.jar;. com.employee.management.hr.pl.Main
+hr\pl>java -classpath ..\common\dist\hr-common.jar;..\DL\dist\hr-dl-1.0.jar;..\BL\build\libs\BL.jar;build\libs\PL.jar;. com.thinking\machines.hr.pl.Main
 ```
